@@ -19,4 +19,7 @@
 
 ## BLOGS
 
+* [HTTP-HOST HEADER ATTACKS](blogs/http-host-header-attacks.md)
+* [EXPLOITING OS COMMAND INJECTION VULNERABILITIES](blogs/exploiting-os-command-injection-vulnerabilities.md)
 * [🐶 THE ANATOMY OF KERBEROS AUTHENTICATION](blogs/the-anatomy-of-kerberos-authentication.md)
+* [Cross-origin resource sharing (CORS) Explanation & Exploitation](blogs/cross-origin-resource-sharing-cors-explanation-and-exploitation.md)

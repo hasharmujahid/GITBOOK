@@ -4,6 +4,8 @@ description: A gitbook for my ctfs writeups and blogs.
 
 # ☠ Welcome to  0x0hax-13 Realm
 
+<figure><img src=".gitbook/assets/WallpaperDog-20371818.jpg" alt=""><figcaption></figcaption></figure>
+
 ## Quick links
 
 {% content-ref url="introduction/whoami.md" %}

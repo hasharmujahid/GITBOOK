@@ -5,6 +5,7 @@
 ## INTRODUCTION
 
 * [❔ Whoami](introduction/whoami.md)
+* [USEFULL COMMANDS](introduction/usefull-commands.md)
 
 ## RECONNAISSANCE
 

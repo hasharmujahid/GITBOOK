@@ -1,4 +1,4 @@
-# 🐶 THE ANATOMY OF KERBEROS AUTHENTICATION
+# THE ANATOMY OF KERBEROS AUTHENTICATION
 
 ### What is Kerberos? <a href="#e92f" id="e92f"></a>
 

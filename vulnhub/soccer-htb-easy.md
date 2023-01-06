@@ -1,12 +1,12 @@
 ---
 description: This is the writeup of the soccer machine on hackthebox.
-cover: .gitbook/assets/avatar.png
+cover: ../.gitbook/assets/avatar.png
 coverY: 0
 ---
 
 # ⚽ SOCCER \[HTB-EASY]
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption><p>SOCCER HTB</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>SOCCER HTB</p></figcaption></figure>
 
 ## ENUMERATION:
 
@@ -114,7 +114,7 @@ So we have a nginx webserver running at port 80 and a mali service at port 9091.
 
 The main page of the website looks like this. There is nothing important in the source code as well.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>index</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>index</p></figcaption></figure>
 
 #### TECH PROFILE:
 
@@ -151,7 +151,7 @@ We found a new directory named tiny.
 
 Let's visit it.
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption><p>tiny file manager</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>tiny file manager</p></figcaption></figure>
 
 This is a login portal for tiny file manager.
 
@@ -165,21 +165,21 @@ We found a RCE exploit for tinyfilemanager but this is authenticated so we first
 
 After reading their [github ](https://github.com/prasathmani/tinyfilemanager)page i found some default creds.
 
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption><p>Default Creds</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Default Creds</p></figcaption></figure>
 
 Let's try them.
 
-<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption><p>LoggedIn</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>LoggedIn</p></figcaption></figure>
 
 Now we can try the RCE Exploit we found which uses directory traversal and RCE to trigger remote access.
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>Permission error</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Permission error</p></figcaption></figure>
 
 We can't seem to upload the shell in the webroot because we don't have proper permissions.
 
 Let's find a directory and where we can upload files.
 
-<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 Let's change our exploit so it will upload shell in the directory where we have permissions.
 
@@ -189,23 +189,23 @@ If you can't get exploit working you can just upload a shell in the directory an
 
 By uploading a shell and triggering it we can receive a reverse shell.
 
-<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption><p>Reverse shell</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>Reverse shell</p></figcaption></figure>
 
 Now stabilize the shell and then we can start working on privileges' escalation part.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Stabilized shell</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Stabilized shell</p></figcaption></figure>
 
 ## PRIVILLEGE ESCALATION {Player}:
 
 Let's throw linpeas and see what we can find.
 
-<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption><p>Subdomain</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Subdomain</p></figcaption></figure>
 
 Let's add his to our hosts file and see what we are dealing with.
 
 ### WEBSITE:
 
-<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption><p>New Functionalities</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>New Functionalities</p></figcaption></figure>
 
 Let's signup and log in.
 
@@ -237,7 +237,7 @@ signup                  [Status: 200, Size: 3741, Words: 1015, Lines: 105, Durat
 
 Let's visit the check directory.
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ```javascript
 <script>
@@ -292,7 +292,7 @@ The input parameter could be vulnerable to sqli injection but we cannot test it 
 
 Let's search google for sql injection in websockets.
 
-<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://rayhan0x01.github.io/ctf/2021/04/02/blind-sqli-over-websocket-automation.html" %}
 
@@ -347,7 +347,7 @@ player@soccer:~$
 
 Let's run linpeas.
 
-<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption><p>Nopass dstat</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>Nopass dstat</p></figcaption></figure>
 
 {% hint style="info" %}
 Doas is a privilege escalation program similar to sudo. It is designed to be as lightweight and simple as possible. It is the default privilege escalation program for OpenBSD but also available for other UNIX-like operating systems through the OpenDoas program.

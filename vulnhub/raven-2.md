@@ -2,6 +2,9 @@
 description: >-
   Raven 2 is an intermediate level boot2root VM. There are four flags to
   capture.
+cover: >-
+  https://images.unsplash.com/photo-1550229055-4ad2531aa9dc?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHw0fHxyYXZlbnxlbnwwfHx8fDE2NzMwMDk3ODM&ixlib=rb-4.0.3&q=80
+coverY: 0
 ---
 
 # RAVEN 2

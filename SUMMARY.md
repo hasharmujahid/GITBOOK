@@ -28,3 +28,7 @@
 ## ☢ VULNHUB
 
 * [RAVEN 2](vulnhub/raven-2.md)
+
+***
+
+* [⚽ SOCCER \[HTB-EASY\]](soccer-htb-easy.md)

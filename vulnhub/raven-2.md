@@ -122,7 +122,7 @@ Let's enumerate these services.
 
 We have a webserver running at port 80 let's visit it and find some usefull information.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>index page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>index page</p></figcaption></figure>
 
 
 
@@ -167,7 +167,7 @@ Visiting the directories to find some intresting information.
 
 Found some intresting informtion in `/vendor` directory.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Directory listing enabled in /vendor.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Directory listing enabled in /vendor.</p></figcaption></figure>
 
 {% hint style="warning" %}
 FLAG 1 Was in the "PATH" directory.
@@ -355,7 +355,7 @@ $msg_body  = "<?php phpinfo(); ?>";
 
 we can try this by putting the payloads in to following fields.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Validation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>Validation</p></figcaption></figure>
 
 But we can't seem to bypass this validation. Let's read the public exploit .
 
@@ -461,11 +461,11 @@ else:
 
 Now start a listener and run the exploit after that  you will have to visit the backdoor to initiate the connection.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>visit the shell</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>visit the shell</p></figcaption></figure>
 
 On attacker side.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Reverse shell</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Reverse shell</p></figcaption></figure>
 
 &#x20;Now spawn a tty shell using python .
 

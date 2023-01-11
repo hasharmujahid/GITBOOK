@@ -1,8 +1,11 @@
 ---
 description: This is the write of mentor machine in hackthebox.
+cover: >-
+  https://images.unsplash.com/photo-1671050579302-c111afa3127e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzM0NTQxNjY&ixlib=rb-4.0.3&q=80
+coverY: 0
 ---
 
-# Mentor \[HTB-MEDIUM]
+# ☠ Mentor \[HTB-MEDIUM]
 
 <figure><img src="../.gitbook/assets/Mentor.png" alt=""><figcaption><p>Banner</p></figcaption></figure>
 

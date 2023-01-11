@@ -29,4 +29,4 @@
 
 * [RAVEN 2](vulnhub/raven-2.md)
 * [⚽ SOCCER \[HTB-EASY\]](vulnhub/soccer-htb-easy.md)
-* [Mentor \[HTB-MEDIUM\]](vulnhub/mentor-htb-medium.md)
+* [☠ Mentor \[HTB-MEDIUM\]](vulnhub/mentor-htb-medium.md)

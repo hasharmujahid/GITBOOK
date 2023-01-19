@@ -27,6 +27,10 @@
 
 ## ☢ VULNHUB
 
-* [RAVEN 2](vulnhub/raven-2.md)
+* [🦅 RAVEN 2](vulnhub/raven-2.md)
 * [⚽ SOCCER \[HTB-EASY\]](vulnhub/soccer-htb-easy.md)
 * [☠ Mentor \[HTB-MEDIUM\]](vulnhub/mentor-htb-medium.md)
+
+## 🕸 WEB CHALLENGES&#x20;
+
+* [Templated \[EASY\]](web-challenges/templated-easy.md)

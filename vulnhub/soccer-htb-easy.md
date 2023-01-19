@@ -6,7 +6,7 @@ coverY: 0
 
 # ⚽ SOCCER \[HTB-EASY]
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>SOCCER HTB</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Soccer.png" alt=""><figcaption><p>SOCCER HTB</p></figcaption></figure>
 
 ## ENUMERATION:
 
@@ -114,7 +114,7 @@ So we have a nginx webserver running at port 80 and a mali service at port 9091.
 
 The main page of the website looks like this. There is nothing important in the source code as well.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>index</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>index</p></figcaption></figure>
 
 #### TECH PROFILE:
 
@@ -173,7 +173,7 @@ Let's try them.
 
 Now we can try the RCE Exploit we found which uses directory traversal and RCE to trigger remote access.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Permission error</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Permission error</p></figcaption></figure>
 
 We can't seem to upload the shell in the webroot because we don't have proper permissions.
 

@@ -7,7 +7,7 @@ cover: >-
 coverY: 0
 ---
 
-# RAVEN 2
+# 🦅 RAVEN 2
 
 {% hint style="success" %}
 Raven 2 is a OSWE like machine from TJ nulls list.&#x20;
@@ -493,7 +493,7 @@ flag2{6a8ed560f0b5358ecf844108048eb337}
 
 Now transfer linpeas over and enumerate for some potential privesc points.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>MYSQL</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>MYSQL</p></figcaption></figure>
 
 We have mysql credentials and we can see if this specific version has any privesc exploits.
 
